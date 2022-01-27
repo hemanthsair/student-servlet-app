@@ -1,0 +1,75 @@
+
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>Studentclass</servlet-name>
+		<servlet-class>com.ty.web.dto.StudentRegister</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		
+		<servlet-name>Studentclass</servlet-name>
+		<url-pattern>/student</url-pattern>
+	
+	</servlet-mapping>
+
+	<servlet>
+		
+		<servlet-name>Createclass</servlet-name>
+		<servlet-class>com.ty.web.dto.CreateStudent</servlet-class>
+	
+	</servlet>
+
+	<servlet-mapping>
+		
+		<servlet-name>Createclass</servlet-name>
+		<url-pattern>/create</url-pattern>
+
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>GST</param-name>
+		<param-value>18.32</param-value>
+	</context-param>
+
+
+	<context-param>
+		<param-name>GST</param-name>
+		<param-value>18.32</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>KA</servlet-name>
+		<servlet-class>com.ty.web.city.Karnataka</servlet-class>
+		<init-param>
+			<param-name>RoadTax</param-name>
+			<param-value>15.6</param-value>
+		</init-param>
+		<init-param>
+			<param-name>RTO</param-name>
+			<param-value>7.2</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>KA</servlet-name>
+		<url-pattern>/kar</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GA</servlet-name>
+		<servlet-class>com.ty.web.city.Goa</servlet-class>
+		<init-param>
+			<param-name>SalesTax</param-name>
+			<param-value>2.6</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GA</servlet-name>
+		<url-pattern>/goa</url-pattern>
+	</servlet-mapping>
+</web-app>
+  
+ 
